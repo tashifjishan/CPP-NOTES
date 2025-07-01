@@ -70,3 +70,52 @@ Its main purpose is to initialize objects.
     ```
 
 
+4. Constructor with Default Arguments
+    - Allows parameters to have default values.
+
+```cpp
+        class MyClass {
+        public:
+            MyClass(int x = 0, int y = 0) {
+                // constructor with default arguments
+            }
+        };
+
+```
+
+5. Dynamic Constructor
+    - Allocates memory dynamically using new inside the constructor.
+
+```cpp
+        class MyClass {
+            int *arr;
+        public:
+            MyClass(int size) {
+                arr = new int[size]; // dynamic memory allocation
+            }
+        };
+```
+
+6. Explicit Constructor
+
+```cpp
+        class MyClass {
+        public:
+            explicit MyClass(int x) {
+                cout << "Value: " << x << endl;
+            }
+        };
+
+        void display(MyClass obj) {}
+
+        int main() {
+            display(10); // ❌ Error: Cannot convert int to MyClass implicitly
+            display(MyClass(10)); // ✅ OK: Explicit construction
+        }
+```
+
+    - display() expects a parameter of type MyClass.
+    - But you gave it an int (10).
+    - C++ checks: "Hey, do I have a way to turn an int into a MyClass?"
+    - It finds that MyClass(int) exists — a constructor that takes an int.
+    - So C++ automatically calls that constructor to convert 10 into a MyClass object.
