@@ -40,7 +40,33 @@ Its main purpose is to initialize objects.
                     };
         ```
 
+2. Parameterized Constructor
+    - Takes arguments.
+    - Allows initialization with specific values.
+    ```cpp
+        class Example {
+            private:
+                int value;
+            public:
+                Example(int x) {
+                   value = x;
+                }
+        };
+    ```
 
+3. Copy Constructor
+    - Takes reference to an object of the same class.
+    - Used to create a copy of an object.
 
+    ```cpp
+        class Example {
+            public:
+                int a;
+                Example(int x) { a = x; }
+                Example(const Example &obj) {
+                    a = obj.a;
+                }
+        };
+    ```
 
 
