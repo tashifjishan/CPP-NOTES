@@ -24,7 +24,7 @@
 ```
 
 ## Example:
-    ```cpp
+```cpp
         class Student {
             public:
                 static int totalStudents;
@@ -33,8 +33,7 @@
                 }
         };
         int Student::totalStudents = 0;
-
-    ```
+```
 # Static Member Functions in C++
 
 ## ✅ What are they?
@@ -43,6 +42,7 @@
 - Can only access static members (not instance variables).
 
 ### ✅ Syntax:
+
 ```cpp
     class MyClass {
     public:
@@ -82,17 +82,6 @@ int main() {
     Math::displayCount(); // Output: Objects created: 2
 }
 ```
-### 🔹 Summary Table
-Feature                     	Static Data Member	Static Member Function
-Belongs to class	                        ✅	            ✅
-Shared among objects	                    ✅	            ✅
-Needs object to call?	                    ❌	            ❌ (can use class name)
-Access non-static members?	                ❌	            ❌
-Uses this pointer?	                        ❌	            ❌
-Defined outside class?	                    ✅ (must)	    ❌ (optional)
-
-
-
 
 
 
