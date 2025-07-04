@@ -38,15 +38,18 @@ int main() {
 
 
 
- Inline and Non-inline member functions
+ 
  Manipulator Functions
- Friend of a class (friend function and friend class),
+
  this pointer
  pointers and multidimensional arrays
+ 
  File stream functions, 
  Sequential access and random access file processing, Binary file operations, 
-Classes and file operations, Structures and file operation
+
 
 
 : Operator Overloading (unary operator, binary 
-operator overloading), Type conversions - basic type to class type, class type to basic type
+operator overloading), 
+
+Type conversions - basic type to class type, class type to basic type
